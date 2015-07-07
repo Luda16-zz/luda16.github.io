@@ -1,19 +1,19 @@
 ---
 layout: post
-title: "A wordpress killer on streets"
-description: "Jekyll is so easy to use you can create a Blog lighting fast."
+title: "Simposio de Telecomunicaciones"
+description: "1er Simposio de Telecomunicaciones, IUPSM - Tachira"
 author: "Luda"
 coverImg: "post-bg.jpg"
 
 ---
 
-#A wordpress killer on streets
+#Telecomunicaciones y Control
 
-Jekyll is so easy to use you can create a Blog lighting fast. Jekyll is so easy to use you can create a Blog lighting fast.
+Las telecomunicaciones nos permiten conectarnos a distancias que hace apenas unos siglos era algo imposible.
 
-  - Type some Markdown on the left
-  - See HTML in the right
-  - Magic
+  - Fibra Optica
+  - Enlaces Satelitales
+  - Redes Punto a Punto
 
 Markdown is a lightweight markup language based on the formatting conventions that people naturally use in email.  As [John Gruber] writes on the [Markdown site] [1]:
 

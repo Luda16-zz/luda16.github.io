@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Creating Jekyll Blog with Luda"
+title: "Wordpress vs Jekyll"
 description: "Creating CMS blog with Ruby's gem Jekyll and its gona take the world."
 author: "Luda"
 coverImg: "post-bg.jpg"
 
 ---
 
-#Creating Jekyll Blog with Luda
+#Jekyll, una opcion valida dentro del monopolio Wordpress
 
 Dillinger is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5 Markdown editor.
 
