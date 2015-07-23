@@ -1,3 +1,11 @@
+
+@font-face {
+  font-family: 'Gagalin';  
+  src: url('/fonts/gagalin.ttf'); 
+       
+}
+
+
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 20px;
@@ -390,4 +398,11 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #64b6ac;
+}
+
+
+
+.comic-title{
+  font-family: 'Gagalin';
+  color: #64b6ac;
 }
