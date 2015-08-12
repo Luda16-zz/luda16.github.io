@@ -19,6 +19,11 @@ a {
 	outline:none;
 }
 
+@font-face {
+  font-family: 'Gagalin';  
+  src: url('/fonts/gagalin.ttf'); 
+       
+}
 
 
 /*----------------------------------------------------
@@ -330,54 +335,98 @@ header{
 }
 
 
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar-wrapper {
-  margin-top:0px;
-  position: relative;
-  z-index: 15;
-  background:#262b37;
-}
-.navbar-wrapper .container{
-	padding:0px;
-}
 
-.navbar-collapse{
-	padding:0;
+/*******************************New Navigation bar*************************************/
+.navbar-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-.navbar-collapse.in{
-	max-height:100%;
+.navbar-custom .navbar-brand {
+  font-weight: 800;
 }
-
-.navbar.navbar-inverse.navbar-static-top {
-  margin:0px auto;
-  background:#262b37;
-  color:#c3c8d6;
-  border:none;
-  font-family: 'Open Sans', sans-serif;
-  font-size:14px;
-  text-transform:uppercase;
+.navbar-custom .nav li a {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
-.navbar.navbar-inverse.navbar-static-top a{
-  color:#c3c8d6;
-  padding:22px 25px;
-  line-height:18px;
-  text-align:center;
+.selected {
+  color: #64b6ac !important;
 }
-.navbar.navbar-inverse.navbar-static-top a:hover{
-  color:#fff;
+@media only screen and (min-width: 768px) {
+  .navbar-custom {
+    background: transparent;
+    border-bottom: 1px solid transparent;
+  }
+  .navbar-custom .navbar-brand {
+    color: white;
+    padding: 20px;
+  }
+  .navbar-custom .navbar-brand:hover,
+  .navbar-custom .navbar-brand:focus {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .navbar-custom .nav li a {
+    color: white;
+    padding: 20px;
+  }
+  .navbar-custom .nav li a:hover,
+  .navbar-custom .nav li a:focus {
+    color: rgba(255, 255, 255, 0.8);
+  }
 }
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus{
-  background:#1b1f29;
-  color:#c3c8d6;
+@media only screen and (min-width: 1170px) {
+  .navbar-custom {
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .navbar-custom.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport */
+    position: fixed;
+    top: -61px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid #f2f2f2;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+  }
+  .navbar-custom.is-fixed .navbar-brand {
+    color: #404040;
+  }
+  .navbar-custom.is-fixed .navbar-brand:hover,
+  .navbar-custom.is-fixed .navbar-brand:focus {
+    color: #64b6ac;
+  }
+  .navbar-custom.is-fixed .nav li a {
+    color: #404040;
+  }
+  .navbar-custom.is-fixed .nav li a:hover,
+  .navbar-custom.is-fixed .nav li a:focus {
+    color: #64b6ac;
+  }
+  .navbar-custom.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
+    -webkit-transform: translate3d(0, 100%, 0);
+    -moz-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    -o-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
 }
-.navbar-inverse .navbar-nav>.active>a:hover {
-  background:#1b1f29;
-  color:#fff;
-}
-
-.hideClass{
-	display:none;
-}
+/***********************************End of new Nav bar*********************************/
 
 
 /* CUSTOMIZE THE CAROUSEL
@@ -412,7 +461,7 @@ header{
 ------------------------------------------------------*/
 
 .aboutme{
-	background:#00bdbd;
+	background:#008D85;
 	color:#fff;
 	position:relative;
 }
@@ -423,7 +472,7 @@ header{
 
 
 .aboutTop{
-	background:#00bdbd;
+	background:#008D85;
 	height:60px;
 }
 .spHeight .aboutTop{
@@ -470,7 +519,7 @@ header{
 	color:#474d5d;
 }
 .technical h2{
-	color:#ff675f;
+	color:#91CC96;
 }
 
 .technical .skillsArea{
@@ -554,7 +603,7 @@ header{
 }
 
 .exprience h2{
-	color:#ff675f;
+	color:#91CC96;
 }
 .exprience p{
 	color:#84868d;
@@ -579,7 +628,7 @@ header{
 .workYear{
 	font-size:17px;
 	color:#fff;
-	background:#ff675f;
+	background:#91CC96;
 	text-align:center;
 	width:120px;
 	height:120px;
@@ -631,7 +680,7 @@ header{
 }
 
 .education h2{
-	color:#ff675f;
+	color:#91CC96;
 }
 .education p{
 	color:#84868d;
@@ -666,7 +715,7 @@ header{
  10. Protfolio Style
 ------------------------------------------------------*/
 .protfolio{
-	background:#2bb3dd;
+	background:#008D85;
 }
 .protfolio .container{
 	padding-top:85px ;
@@ -798,7 +847,7 @@ span.hoverBox .zoom{
 	visibility:hidden;
 	width:42px;
 	height:42px;
-	background:#ff675f;
+	background:#91CC96;
 	color:#fff;
 	position: relative;
 	left:-150%;
@@ -911,9 +960,6 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 	position:absolute !important;
 }
 
-
-
-
 /*----------------------------------------------------
  11. Get in tuch Style
 ------------------------------------------------------*/
@@ -927,7 +973,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 }
 
 .contact h2{
-	color:#ff675f;
+	color:#91CC96;
 }
 .contact p{
 	color:#84868d;
@@ -1019,7 +1065,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 
 
 .conForm .submitBnt{
-	background:#ff675f;
+	background:#91CC96;
 	font-family: 'Open Sans', sans-serif;
 	color:#fff;
 	font-size:16px;
@@ -1039,11 +1085,11 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 }
 
 #success_page{
-	color: #00bdbd;
+	color: #008D85;
 	font-weight: 500;
 }
 .error_message{
-	color: #ff675f;
+	color: #91CC96;
 	padding-bottom: 15px;
 	font-weight: 500;
 }
@@ -1059,7 +1105,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
  12. Footer Style
 ------------------------------------------------------*/
 .footer{
-	background:#00bdbd;
+	background:#008D85;
 }
 .footer .container{
 	padding:40px 0;
@@ -1074,7 +1120,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 	display:inline-block;
 	text-align:center;
 	background:#ffffff;
-	color:#00bdbd;
+	color:#008D85;
 	line-height:42px;
 	margin:0 6px;
 	width:42px !important;
@@ -1091,7 +1137,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 }
 
 .footer ul li a{
-	color:#00bdbd;
+	color:#008D85;
 	width:42px !important;
 	height:42px !important;
 }
@@ -1301,6 +1347,32 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 	}
 }
 
+
+.comic-title{
+  font-family: 'Gagalin';
+  color: #64b6ac;
+}
+
+
+.logoImage{
+    width: 60px;    
+    border-radius: 65px;
+
+}
+
+.logoProfile{
+    border-radius: 65px;
+}
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+}
+  
 
 
 
