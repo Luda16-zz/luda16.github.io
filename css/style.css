@@ -1,3 +1,5 @@
+
+
 * {
 	padding:0;
 	margin:0;
@@ -112,11 +114,7 @@ h4.subHeading{
 /*----------------------------------------------------
  3.	Header Part
 ------------------------------------------------------*/
-@font-face {
-  font-family: "Gagalin";  
-  src: url("fonts/gagalin.ttf"); 
-       
-}
+
 
 header{
 	position:relative;
@@ -137,8 +135,8 @@ header{
 	padding:30px 0 30px ;	
 }
 .bannerText h1{
-	font-family: "Gagalin";  
-	text-transform:uppercase;
+	
+	
 }
 .bannerText h2{
 	font-size:34px;
@@ -153,6 +151,20 @@ header{
 .bgwidth { width: 100%; }
 .bgheight { height: 100%; }
 
+@font-face {
+	font-family: 'Gagalin';	
+	src: 	url('fonts/gagalin.woff') format('woff'), 
+			url('fonts/gagalin.ttf') format('truetype'),
+			url('fonts/gagalin.svg') format('svg');
+	src: local('gagalin'), url('fonts/gagalin.ttf') format('truetype');	
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+.big_title{
+	font-family: 'Gagalin';
+}
 
 
 
