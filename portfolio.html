@@ -10,12 +10,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--main style-->
 <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,400italic' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 <link rel="stylesheet" href="css/portfolio.css"> <!-- Resource style -->
-<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
 <!--background slider style-->
 <link rel="stylesheet" type="text/css" href="css/slideshow.css" />
 <!--google font style-->
@@ -34,21 +35,59 @@
 		<![endif]-->
 </head>
 <body>
-	<body>
+
+	<div class="wrapper" id="wrapper">
+		<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                 <a class="navbar-brand" href="#page-top"> <img class="img-responsive logoImage" src="images/profile.png" alt=""></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="index.html#aboutme">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="https://medium.com/@LudaCasanova">Blog</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+
+        </nav>   
+
+
+
 	<div class="cd-intro-block">
 		<div class="content-wrapper">
-			<h1>Squeezebox Portfolio Template</h1>
+			<h1>Luda's portfolio</h1>
 			<a href="#0" class='cd-btn' data-action="show-projects">Show projects</a>
 		</div>
 	</div> <!-- .cd-intro-block -->
-
 	<div class="cd-projects-wrapper">
 		<ul class="cd-slider">
 			<li class="current">
 				<a href="#0">
 					<img src="images/img.png" alt="project image">
 					<div class="project-info">
-						<h2>Project 1</h2>
+						<h2>AlumNet</h2>
 						<p>Lorem ipsum dolor sit amet.</p>
 					</div>
 				</a>
@@ -58,7 +97,7 @@
 				<a href="#0">
 					<img src="images/img.png" alt="project image">
 					<div class="project-info">
-						<h2>Project 2</h2>
+						<h2>Personaling</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, dicta.</p>
 					</div>
 				</a>
@@ -68,7 +107,7 @@
 				<a href="#0">
 					<img src="images/img.png" alt="project image">
 					<div class="project-info">
-						<h2>Project 3</h2>
+						<h2>Andrea Tello</h2>
 						<p>Lorem ipsum dolor sit amet.</p>
 					</div>
 				</a>
@@ -78,7 +117,7 @@
 				<a href="#0">
 					<img src="images/img.png" alt="project image">
 					<div class="project-info">
-						<h2>Project 4</h2>
+						<h2>Quant Trading</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
 					</div>
 				</a>
@@ -88,7 +127,7 @@
 				<a href="#0">
 					<img src="images/img.png" alt="project image">
 					<div class="project-info">
-						<h2>Project 5</h2>
+						<h2>Guareber Tech</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur.</p>
 					</div>
 				</a>
@@ -141,6 +180,9 @@
 		</ul> <!-- .cd-slider-navigation -->
 	</div> <!-- .cd-projects-wrapper -->
 
+
+
+
 	<div class="cd-project-content">
 		<div>
 			<h2>Project title here</h2>
@@ -157,12 +199,27 @@
 		</div>
 		<a href="#0" class="close cd-img-replace">Close</a>
 	</div> <!-- .cd-project-content -->
+
+
+
+
+	</div>
+
+</body>
+<footer>
+	<section class="footer" id="footer">
+	    <div class="container">
+	      <ul>
+	        <li><a href="https://twitter.com/LudaCasanova"><i class="fa fa-twitter fa-2x"></i></a></li>
+	        <li><a href="https://www.facebook.com/luisdaniel.casanova"><i class="fa fa-facebook fa-2x"></i></a></li>
+	        <li><a href="https://ve.linkedin.com/in/luisdanielcasanova"><i class="fa fa-linkedin fa-2x"></i></a></li>       
+	        <li><a href="https://github.com/Luda16"><i class="fa fa-github fa-2x"></i></a></li>
+	      </ul>
+	    </div>
+  </section>
+	
+</footer>
 <script src="js/jquery-2.1.4.js"></script>
 <script src="js/jquery.mobile.custom.min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
-</body>
-	
-
-
-</body>
-<footer></footer>
+<script src="js/modernizr.js"></script> <!-- Modernizr -->
