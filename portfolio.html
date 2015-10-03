@@ -15,8 +15,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,400italic' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-<link rel="stylesheet" href="css/portfolio.css"> <!-- Resource style -->
-
 <!--background slider style-->
 <link rel="stylesheet" type="text/css" href="css/slideshow.css" />
 <!--google font style-->
@@ -80,85 +78,77 @@
 <div class="header">
     <h1>Luda's <br> <span>[ Portfolio Gallery ]</span></h1>    
 </div>
-<div id="top"></div>
-<section class="gallery">
-	<div class="row-porfolio">
-		<ul>
-			<a href="#" class="close"></a>
-			<li>
-				<a href="#item02">
-					<div class="post arts"><img src="http://d13yacurqjgara.cloudfront.net/users/22177/screenshots/1474358/respecthustle-bearfight-jeremiahbritton-.png" alt="">
-				</a>
-			</li>
 
-			<li>
-				<a href="#item02">
-					<img src="https://d13yacurqjgara.cloudfront.net/users/22177/screenshots/1514374/essentialswallpaperdribbble-jeremiahbritton.jpg" alt="">
-				</a>
-			</li>
+<section class="portfolio" id="technical">
+<div class="container">
+<div class="portfolioFilter">
+        <ul>
+          <li><a href="#" data-filter="*" class="current">All</a></li>
+          <li><a href="#" data-filter=".ror">Ruby on Rails</a></li>
+          <li><a href="#" data-filter=".htmlCss">HTML/CSS</a></li>
+          <li><a href="#" data-filter=".wordpress">Wordpress</a></li>
+          <li><a href="#" data-filter=".php">PHP</a></li>
+          <li><a href="#" data-filter=".uiUx">UI/UX</a></li>
+        </ul>
+      </div>
+<div class="portfolioContainer" id="posts">
+    <div class='post wordpress isotope-item'><img src='http://i.imgur.com/NjwjzuK.jpg'/>
+  	  <div class='post-content'>
+		   <h2>AlumNet</h2>
+	   	<p>AIESEC alumni social network</p>
+		 <a href="#">View more</a>
+	    </div>
+    </div>
+    <div class='post wordpress php isotope-item'><img src='http://i.imgur.com/hCzZsC5.jpg'/>
+  	  <div class='post-content'>
+		   <h2>Personaling</h2>
+	   	<p>Woman Ecommerce adapted to your needs by Personal Shoppers</p>
+		 <a href="#">View more</a>
+	    </div>
+    </div>
+    <div class='post php isotope-item'><img src='http://i.imgur.com/ksYMf87.jpg'/>
+  	  <div class='post-content'>
+		   <h2>Andrea Tello</h2>
+	   	<p>Traditional nazcan original jewellery</p>
+		 <a href="#">View more</a>
+	    </div>
+    </div>
+    <div class='post uiUx ror isotope-item'><img src='http://i.imgur.com/GaObIBE.jpg'/>
+  	  <div class='post-content'>
+		   <h2>Quant Trading</h2>
+	   	<p>Everything you need to learn about Finance and Trading</p>
+		 <a href="#">View more</a>
+	    </div>
+    </div>
+    <div class='post uiUx ror isotope-item'><img src='http://i.imgur.com/JDFqCeg.jpg'/>
+  	  <div class='post-content'>
+		   <h2>Silos Musos</h2>
+	   	<p>This description for demo only and not for reading</p>
+		 <a href="#">View more</a>
+	    </div>
+    </div>
+    <div class='post games'><img src='http://i.imgur.com/4IiYv9y.jpg'/>
+  	  <div class='post-content'>
+		   <h2>Guareber Tech</h2>
+	   	<p>This description for demo only and not for reading</p>
+		 <a href="#">View more</a>
+	    </div>
+    </div>
+</div>
 
-			<li>
-				<a href="#item02">
-					<img src="https://d13yacurqjgara.cloudfront.net/users/22177/screenshots/1502114/upatnight-city-jb.png" alt="">
-				</a>
-			</li>
-			<li>
-				<a class="image" href="#item01">
-					<img src="http://d13yacurqjgara.cloudfront.net/users/22177/screenshots/1483213/dog-jeremiahbritton.jpg" alt="">
-				</a>
-			</li>
-			<li>
-				<a class="image" href="#item02">
-					<img src="http://d13yacurqjgara.cloudfront.net/users/22177/screenshots/1147375/dwyl-circle-jb.png" alt="">
-				</a>
-			</li>
-			<li>
-				<a class="image" href="#item01">
-					<img src="http://d13yacurqjgara.cloudfront.net/users/22177/screenshots/1139662/libertytorch-jeremiahbritton.png" alt="">
-				</a>
-			</li>
-			<li>
-				<a class="image" href="#item01">
-					<img src="https://d13yacurqjgara.cloudfront.net/users/22177/screenshots/1484728/essentials-jeremiahbritton-dribbble.jpg" alt="">
-				</a>
-			</li>
-			<li>
-				<a class="image" href="#item01">
-					<img src="https://d13yacurqjgara.cloudfront.net/users/22177/screenshots/1425556/draftdrawcoasters-jeremiahbritton.png" alt="">
-				</a>
-			</li>
-		</ul>
-	</div> <!-- / row-porfolio -->
+<div class='hidden'></div>
+</div>
+ </section>
 
-	<!-- Item 01 -->
-	<div id="item01" class="port">
-	
-		<div class="row-porfolio">
-			<div class="description">
-				<h1>Item 01</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
-			</div>
+  <section class="contact" id="contact">
+    <div class="container topCon">
+      <div class="heading">
+        <h2>Get In Touch</h2>
+        <p>Please feel free if you would like to have a chat.</p>
+      </div>
+    </div>    
+  </section>  
 
-				<img src="http://d13yacurqjgara.cloudfront.net/users/22177/screenshots/1379781/winterletters-jeremiahbritton-dribbble.png" alt="">
-			</div>
-		</div> <!-- / row-porfolio -->
-
-
-
-	<!-- Item 02 -->
-	<div id="item02" class="port">
-	
-		<div class="row-porfolio">
-			<div class="description">
-				<h1>Item 02</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
-			</div>
-			<img src="http://d13yacurqjgara.cloudfront.net/users/22177/screenshots/404704/wontstopblue-womens-jeremiahbritton.jpg" alt="">
-		</div> <!-- / row-porfolio -->
-
-	</div> <!-- / Item 02 -->
-
-</section> <!-- / projects -->
   <section class="footer" id="footer">
     <div class="container">
       <ul>
