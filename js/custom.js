@@ -180,6 +180,8 @@ jQuery(document).ready(function($) {
     }
 });
 
+
+
  // portfolio
  $('.gallery ul li a').click(function() {
      var itemID = $(this).attr('href');
