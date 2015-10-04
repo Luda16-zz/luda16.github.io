@@ -1,0 +1,85 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    font-family: "Helvetica Neue", Helvetica,       Arial, sans-serif;
+    position: relative;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.project{
+    background: #22d6ff;
+    border-top: 5px solid #00c2ef;
+    width: 100%;
+    float: left;
+    transition: width 0.5s ease;
+    overflow: auto;
+    position: relative;    
+}
+
+
+.title {
+    background: #0098bb;    display: block;
+    padding: 5px 10px;
+    left: 0;
+    margin-top: 50px;
+    width: 90%;
+    text-align: right;
+}
+
+.selected > .title {
+    color: white;
+}
+
+.content {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    font-weight: 300;
+    text-align: justify;
+}
+
+a:link, a:visited {
+    color: #22d6ff;
+}
+
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.details {
+    margin: 10px 0;
+    background: #eee;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 0.85em;
+    font-family: 'Source Code Pro', "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-weight: 300;
+    text-align: left;
+}
+
+.details b {
+    font-weight: 500;
+}
+img {
+    max-width: 100%;
+    border: 0;
+}
