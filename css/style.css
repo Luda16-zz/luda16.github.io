@@ -1380,10 +1380,6 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
   max-width: 100%;
 }
   
-
-
-
-
 /********************************************************************
 				Portfolio styles
 /********************************************************************/
@@ -1404,7 +1400,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
   letter-spacing: 3px;
   line-height: 0.8;
   padding-top: 50px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .header h1 span {
   text-transform: uppercase;
@@ -1457,9 +1453,9 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 
 }
 #posts .post img {
-   position: relative;
+   	position: relative;
 	display: block;
-   width: -webkit-calc(100% + 60px);
+   	width: -webkit-calc(100% + 60px);
 	width: calc(100% + 60px);
 	opacity: 1;
 	-webkit-transition: opacity 0.35s, 
