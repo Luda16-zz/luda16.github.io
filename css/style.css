@@ -160,14 +160,15 @@ header{
 	src: 	url('fonts/gagalin.woff') format('woff'), 
 			url('fonts/gagalin.ttf') format('truetype'),
 			url('fonts/gagalin.svg') format('svg');
-	src: local('gagalin'), url('fonts/gagalin.ttf') format('truetype');	
+	src: local('gagalin'), url('../fonts/gagalin.ttf') format('truetype');	
 	font-weight: normal;
-	font-style: normal;
+	font-style: normal;	
 }
 
 
 .big_title{
 	font-family: 'Gagalin';
+	color: #91CC96;
 }
 
 
@@ -1400,7 +1401,8 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
   letter-spacing: 3px;
   line-height: 0.8;
   padding-top: 50px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Gagalin';
+  color: #91CC96;
 }
 .header h1 span {
   text-transform: uppercase;
