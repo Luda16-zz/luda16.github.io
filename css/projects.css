@@ -16,18 +16,18 @@ body {
 }
 
 .project{
-    background: #22d6ff;
-    border-top: 5px solid #00c2ef;
+    background: #008D85;
+    border-top: 5px solid #91CC96;
     width: 100%;
     float: left;
     transition: width 0.5s ease;
     overflow: auto;
-    position: relative;    
+    position: relative;
 }
 
 
 .title {
-    background: #0098bb;    display: block;
+    background: #91CC96;    display: block;
     padding: 5px 10px;
     left: 0;
     margin-top: 50px;
@@ -52,7 +52,7 @@ body {
 }
 
 a:link, a:visited {
-    color: #22d6ff;
+    color: #91CC96;
 }
 
 .fa {
