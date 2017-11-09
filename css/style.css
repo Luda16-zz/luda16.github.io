@@ -1540,3 +1540,8 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
     width: 50%;
   }
 }
+
+.link-ref{
+	color: #474d5d;
+	text-decoration: none;
+}
